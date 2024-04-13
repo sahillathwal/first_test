@@ -1,6 +1,4 @@
 import 'package:app_ui/app_ui.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:first_test/app/app.dart';
 import 'package:first_test/feed/feed.dart';
 import 'package:first_test/home/home.dart';
@@ -8,6 +6,8 @@ import 'package:first_test/login/login.dart';
 import 'package:first_test/navigation/navigation.dart';
 import 'package:first_test/search/search.dart';
 import 'package:first_test/user_profile/user_profile.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});

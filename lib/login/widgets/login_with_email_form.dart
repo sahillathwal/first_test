@@ -1,11 +1,11 @@
 import 'package:app_ui/app_ui.dart';
-import 'package:flutter/gestures.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:first_test/l10n/l10n.dart';
 import 'package:first_test/login/login.dart';
 import 'package:first_test/magic_link_prompt/magic_link_prompt.dart';
 import 'package:first_test/terms_of_service/terms_of_service.dart';
+import 'package:flutter/gestures.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:form_inputs/form_inputs.dart';
 
 class LoginWithEmailForm extends StatelessWidget {

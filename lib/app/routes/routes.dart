@@ -1,7 +1,7 @@
-import 'package:flutter/widgets.dart';
 import 'package:first_test/app/app.dart';
 import 'package:first_test/home/home.dart';
 import 'package:first_test/onboarding/onboarding.dart';
+import 'package:flutter/widgets.dart';
 
 List<Page<dynamic>> onGenerateAppViewPages(
   AppStatus state,

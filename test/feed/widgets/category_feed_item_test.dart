@@ -3,12 +3,12 @@
 
 import 'package:article_repository/article_repository.dart';
 import 'package:bloc_test/bloc_test.dart';
-import 'package:flutter/material.dart' hide Spacer;
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:first_test/article/article.dart';
 import 'package:first_test/categories/categories.dart';
 import 'package:first_test/feed/feed.dart';
 import 'package:first_test/newsletter/newsletter.dart';
+import 'package:flutter/material.dart' hide Spacer;
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:mocktail_image_network/mocktail_image_network.dart';
@@ -199,7 +199,7 @@ void main() {
             publishedAt: DateTime(2022, 3, 12),
             imageUrl: 'imageUrl',
             title: 'title',
-          )
+          ),
         ],
       );
       await mockNetworkImages(() async {
@@ -361,7 +361,7 @@ void main() {
               imageUrl: 'imageUrl',
               title: 'title',
               action: NavigateToArticleAction(articleId: articleId),
-            )
+            ),
           ],
         );
 
@@ -513,7 +513,7 @@ void main() {
               imageUrl: 'imageUrl',
               title: 'title',
               action: NavigateToVideoArticleAction(articleId: articleId),
-            )
+            ),
           ],
         );
 

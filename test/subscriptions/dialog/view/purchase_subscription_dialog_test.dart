@@ -1,9 +1,9 @@
 import 'dart:async';
 
 import 'package:app_ui/app_ui.dart';
-import 'package:flutter/material.dart';
 import 'package:first_test/analytics/analytics.dart';
 import 'package:first_test/subscriptions/subscriptions.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:in_app_purchase_repository/in_app_purchase_repository.dart'
     hide PurchaseCompleted;

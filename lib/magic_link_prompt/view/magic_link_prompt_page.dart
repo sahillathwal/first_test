@@ -1,7 +1,7 @@
 import 'package:app_ui/app_ui.dart';
-import 'package:flutter/material.dart';
 import 'package:first_test/login/login.dart';
 import 'package:first_test/magic_link_prompt/magic_link_prompt.dart';
+import 'package:flutter/material.dart';
 
 class MagicLinkPromptPage extends StatelessWidget {
   const MagicLinkPromptPage({required this.email, super.key});
@@ -25,7 +25,7 @@ class MagicLinkPromptPage extends StatelessWidget {
             icon: const Icon(Icons.close),
             onPressed: () => Navigator.of(context)
                 .popUntil((route) => route.settings.name == LoginModal.name),
-          )
+          ),
         ],
       ),
       body: MagicLinkPromptView(

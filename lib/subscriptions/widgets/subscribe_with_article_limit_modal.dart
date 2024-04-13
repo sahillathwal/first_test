@@ -1,7 +1,5 @@
 import 'package:app_ui/app_ui.dart'
     show AppButton, AppColors, AppSpacing, Assets, showAppModal;
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:first_test/ads/ads.dart';
 import 'package:first_test/analytics/analytics.dart';
 import 'package:first_test/app/app.dart';
@@ -9,6 +7,8 @@ import 'package:first_test/article/article.dart';
 import 'package:first_test/l10n/l10n.dart';
 import 'package:first_test/login/login.dart';
 import 'package:first_test/subscriptions/subscriptions.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 
 @visibleForTesting

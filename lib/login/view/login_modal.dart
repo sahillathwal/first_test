@@ -1,6 +1,6 @@
+import 'package:first_test/login/login.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:first_test/login/login.dart';
 import 'package:user_repository/user_repository.dart';
 
 class LoginModal extends StatelessWidget {

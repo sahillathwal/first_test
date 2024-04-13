@@ -52,7 +52,7 @@ if (keystorePropertiesFile.exists()) {
 
 
 android {
-    compileSdkVersion 33 //change based on device compatibility
+    compileSdkVersion 34 //change based on device compatibility
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
@@ -65,11 +65,21 @@ android {
 
     defaultConfig {
         applicationId "com.test.firstTest.dev"
-        minSdkVersion 33 //change based on device compatibility
-        targetSdkVersion 33 //change based on device compatibility
+        minSdkVersion 34 //change based on device compatibility
+        targetSdkVersion 34 //change based on device compatibility
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
     }
 
     signingConfigs {

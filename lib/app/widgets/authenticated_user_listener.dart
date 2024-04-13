@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:first_test/analytics/analytics.dart';
 import 'package:first_test/app/app.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class AuthenticatedUserListener extends StatelessWidget {
   const AuthenticatedUserListener({

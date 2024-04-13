@@ -3,11 +3,11 @@
 import 'dart:async';
 
 import 'package:bloc_test/bloc_test.dart';
+import 'package:first_test/categories/categories.dart';
+import 'package:first_test/feed/feed.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart' hide Spacer;
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:first_test/categories/categories.dart';
-import 'package:first_test/feed/feed.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:news_blocks/news_blocks.dart';

@@ -1,11 +1,11 @@
 import 'package:app_ui/app_ui.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:first_test/app/app.dart';
 import 'package:first_test/article/article.dart';
 import 'package:first_test/feed/feed.dart';
 import 'package:first_test/l10n/l10n.dart';
 import 'package:first_test/subscriptions/subscriptions.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sliver_tools/sliver_tools.dart';
 
 class ArticleTrailingContent extends StatelessWidget {
@@ -56,7 +56,7 @@ class ArticleTrailingContent extends StatelessWidget {
           const SliverPadding(
             padding: EdgeInsets.all(AppSpacing.lg),
             sliver: SliverToBoxAdapter(child: ArticleComments()),
-          )
+          ),
         ],
         if (isArticlePreview) ...[
           SliverList(
@@ -70,7 +70,7 @@ class ArticleTrailingContent extends StatelessWidget {
               ],
             ),
           ),
-        ]
+        ],
       ],
     );
   }

@@ -1,11 +1,11 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:bloc_test/bloc_test.dart';
-import 'package:flutter/material.dart';
 import 'package:first_test/app/app.dart';
 import 'package:first_test/login/login.dart';
 import 'package:first_test/user_profile/user_profile.dart';
 import 'package:first_test_api/client.dart' hide User;
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:user_repository/user_repository.dart';

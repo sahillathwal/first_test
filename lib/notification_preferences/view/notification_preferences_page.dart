@@ -1,8 +1,8 @@
 import 'package:app_ui/app_ui.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:first_test/l10n/l10n.dart';
 import 'package:first_test/notification_preferences/notification_preferences.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_repository/news_repository.dart';
 import 'package:notifications_repository/notifications_repository.dart';
 

@@ -1,7 +1,7 @@
 import 'package:app_ui/app_ui.dart';
-import 'package:flutter/material.dart';
 import 'package:first_test/l10n/l10n.dart';
 import 'package:first_test/subscriptions/subscriptions.dart';
+import 'package:flutter/material.dart';
 
 class NavDrawerSubscribe extends StatelessWidget {
   const NavDrawerSubscribe({super.key});

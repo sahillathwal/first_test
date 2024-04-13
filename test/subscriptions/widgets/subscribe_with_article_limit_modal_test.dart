@@ -1,14 +1,14 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:bloc_test/bloc_test.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:first_test/ads/ads.dart';
 import 'package:first_test/analytics/analytics.dart';
 import 'package:first_test/app/app.dart';
 import 'package:first_test/article/article.dart';
 import 'package:first_test/login/login.dart';
 import 'package:first_test/subscriptions/subscriptions.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart' as ads;
 import 'package:in_app_purchase_repository/in_app_purchase_repository.dart';

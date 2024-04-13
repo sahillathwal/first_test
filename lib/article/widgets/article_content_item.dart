@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart' hide Image, Spacer;
 import 'package:first_test/article/article.dart';
 import 'package:first_test/l10n/l10n.dart';
 import 'package:first_test/newsletter/newsletter.dart';
 import 'package:first_test/slideshow/slideshow.dart';
+import 'package:flutter/material.dart' hide Image, Spacer;
 import 'package:news_blocks/news_blocks.dart';
 import 'package:news_blocks_ui/news_blocks_ui.dart';
 

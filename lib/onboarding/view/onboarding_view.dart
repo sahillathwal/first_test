@@ -1,9 +1,9 @@
 import 'package:app_ui/app_ui.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:first_test/app/app.dart';
 import 'package:first_test/l10n/l10n.dart';
 import 'package:first_test/onboarding/onboarding.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class OnboardingView extends StatefulWidget {
   const OnboardingView({super.key});

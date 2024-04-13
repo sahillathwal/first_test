@@ -1,8 +1,8 @@
 import 'package:app_ui/app_ui.dart';
-import 'package:flutter/material.dart' hide Spacer;
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:first_test/article/article.dart';
 import 'package:first_test/l10n/l10n.dart';
+import 'package:flutter/material.dart' hide Spacer;
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ArticleComments extends StatelessWidget {
   const ArticleComments({super.key});

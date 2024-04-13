@@ -1,8 +1,8 @@
 import 'package:app_ui/app_ui.dart'
     show AppButton, AppColors, AppSpacing, Assets;
 import 'package:email_launcher/email_launcher.dart';
-import 'package:flutter/material.dart';
 import 'package:first_test/l10n/l10n.dart';
+import 'package:flutter/material.dart';
 
 class MagicLinkPromptView extends StatelessWidget {
   const MagicLinkPromptView({required this.email, super.key});
@@ -30,7 +30,7 @@ class MagicLinkPromptView extends StatelessWidget {
                 const SizedBox(height: AppSpacing.xxxlg),
                 MagicLinkPromptSubtitle(email: email),
                 const Spacer(),
-                MagicLinkPromptOpenEmailButton()
+                MagicLinkPromptOpenEmailButton(),
               ],
             ),
           ),

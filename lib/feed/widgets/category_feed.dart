@@ -1,9 +1,9 @@
 import 'package:app_ui/app_ui.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:first_test/feed/feed.dart';
 import 'package:first_test/network_error/network_error.dart';
 import 'package:first_test_api/client.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CategoryFeed extends StatelessWidget {
   const CategoryFeed({

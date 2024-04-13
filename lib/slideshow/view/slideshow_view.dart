@@ -1,9 +1,9 @@
 import 'package:app_ui/app_ui.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:first_test/app/app.dart';
 import 'package:first_test/article/article.dart';
 import 'package:first_test/l10n/l10n.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_blocks/news_blocks.dart';
 import 'package:news_blocks_ui/news_blocks_ui.dart';
 
@@ -37,9 +37,9 @@ class SlideshowView extends StatelessWidget {
                     },
                   ),
                 ),
-              if (!isSubscriber) const ArticleSubscribeButton()
+              if (!isSubscriber) const ArticleSubscribeButton(),
             ],
-          )
+          ),
         ],
       ),
       backgroundColor: AppColors.darkBackground,

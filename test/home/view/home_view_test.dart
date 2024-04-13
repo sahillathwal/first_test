@@ -5,8 +5,6 @@ import 'dart:async';
 
 import 'package:app_ui/app_ui.dart';
 import 'package:bloc_test/bloc_test.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:first_test/app/app.dart';
 import 'package:first_test/categories/categories.dart';
 import 'package:first_test/feed/feed.dart';
@@ -15,6 +13,8 @@ import 'package:first_test/login/login.dart';
 import 'package:first_test/navigation/navigation.dart';
 import 'package:first_test/search/search.dart';
 import 'package:first_test/user_profile/user_profile.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:news_blocks/news_blocks.dart';

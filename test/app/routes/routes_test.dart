@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:first_test/app/app.dart';
 import 'package:first_test/home/home.dart';
 import 'package:first_test/onboarding/onboarding.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
@@ -14,7 +14,7 @@ void main() {
             (p) => p.child,
             'child',
             isA<OnboardingPage>(),
-          )
+          ),
         ],
       );
     });
@@ -27,7 +27,7 @@ void main() {
             (p) => p.child,
             'child',
             isA<HomePage>(),
-          )
+          ),
         ],
       );
     });
@@ -40,7 +40,7 @@ void main() {
             (p) => p.child,
             'child',
             isA<HomePage>(),
-          )
+          ),
         ],
       );
     });

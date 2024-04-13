@@ -1,9 +1,9 @@
 import 'package:app_ui/app_ui.dart' show AppButton, AppSpacing, Assets;
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:first_test/app/app.dart';
 import 'package:first_test/l10n/l10n.dart';
 import 'package:first_test/login/login.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:form_inputs/form_inputs.dart';
 
 class LoginForm extends StatelessWidget {
@@ -69,7 +69,7 @@ class _LoginContent extends StatelessWidget {
               const SizedBox(height: AppSpacing.lg),
               _TwitterLoginButton(),
               const SizedBox(height: AppSpacing.lg),
-              _ContinueWithEmailLoginButton()
+              _ContinueWithEmailLoginButton(),
             ],
           ),
         );

@@ -1,7 +1,7 @@
 import 'package:app_ui/app_ui.dart';
+import 'package:first_test/login/login.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:first_test/login/login.dart';
 import 'package:user_repository/user_repository.dart';
 
 class LoginWithEmailPage extends StatelessWidget {
@@ -24,7 +24,7 @@ class LoginWithEmailPage extends StatelessWidget {
               key: const Key('loginWithEmailPage_closeIcon'),
               icon: const Icon(Icons.close),
               onPressed: () => Navigator.pop(context),
-            )
+            ),
           ],
         ),
         body: const LoginWithEmailForm(),

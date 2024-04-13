@@ -1,7 +1,5 @@
 import 'package:app_ui/app_ui.dart'
     show AppBackButton, AppButton, AppColors, AppSpacing, AppSwitch, Assets;
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:first_test/analytics/analytics.dart';
 import 'package:first_test/app/app.dart';
 import 'package:first_test/l10n/l10n.dart';
@@ -9,6 +7,8 @@ import 'package:first_test/notification_preferences/notification_preferences.dar
 import 'package:first_test/subscriptions/subscriptions.dart';
 import 'package:first_test/terms_of_service/terms_of_service.dart';
 import 'package:first_test/user_profile/user_profile.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:notifications_repository/notifications_repository.dart';
 import 'package:user_repository/user_repository.dart';
 

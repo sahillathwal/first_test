@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:app_ui/app_ui.dart';
-import 'package:flutter/material.dart';
 import 'package:first_test/terms_of_service/terms_of_service.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import '../../helpers/helpers.dart';

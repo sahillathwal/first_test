@@ -1,13 +1,13 @@
 import 'package:app_ui/app_ui.dart';
 import 'package:article_repository/article_repository.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:first_test/ads/ads.dart';
 import 'package:first_test/app/app.dart';
 import 'package:first_test/article/article.dart';
 import 'package:first_test/l10n/l10n.dart';
 import 'package:first_test/subscriptions/subscriptions.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_blocks_ui/news_blocks_ui.dart';
 import 'package:share_launcher/share_launcher.dart';
 
@@ -126,7 +126,7 @@ class ArticleView extends StatelessWidget {
                             .add(ShareRequested(uri: uri)),
                       ),
                     ),
-                  if (!isSubscriber) const ArticleSubscribeButton()
+                  if (!isSubscriber) const ArticleSubscribeButton(),
                 ],
               ),
               body: ArticleThemeOverride(
