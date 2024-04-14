@@ -203,10 +203,10 @@ class FirebaseAuthenticationClient implements AuthenticationClient {
   }) async {
     try {
       final redirectUrl = Uri.https(
-        String.fromEnvironment('FLAVOR_DEEP_LINK_DOMAIN',
-            defaultValue: 'secondtest1.page.link'),
-        String.fromEnvironment('FLAVOR_DEEP_LINK_PATH',
-            defaultValue: 'email_login'),
+        const String.fromEnvironment('FLAVOR_DEEP_LINK_DOMAIN',
+            defaultValue: 'secondtest1.page.link',),
+        const String.fromEnvironment('FLAVOR_DEEP_LINK_PATH',
+            defaultValue: 'email_login',),
         <String, String>{'email': email},
       );
 

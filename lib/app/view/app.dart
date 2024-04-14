@@ -10,10 +10,8 @@ import 'package:flow_builder/flow_builder.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:in_app_purchase_repository/in_app_purchase_repository.dart';
-import 'package:news_blocks_ui/news_blocks_ui.dart';
 import 'package:news_repository/news_repository.dart';
 import 'package:notifications_repository/notifications_repository.dart';
-import 'package:platform/platform.dart';
 import 'package:user_repository/user_repository.dart';
 
 class App extends StatelessWidget {
