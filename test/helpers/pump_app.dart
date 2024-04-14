@@ -1,7 +1,5 @@
-import 'package:ads_consent_client/ads_consent_client.dart';
 import 'package:article_repository/article_repository.dart';
 import 'package:bloc_test/bloc_test.dart';
-import 'package:first_test/ads/ads.dart';
 import 'package:first_test/analytics/analytics.dart';
 import 'package:first_test/app/app.dart';
 import 'package:first_test/l10n/l10n.dart';

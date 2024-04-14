@@ -1,6 +1,5 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:ads_consent_client/ads_consent_client.dart';
 import 'package:bloc_test/bloc_test.dart';
 import 'package:first_test/onboarding/onboarding.dart';
 import 'package:flutter_test/flutter_test.dart';

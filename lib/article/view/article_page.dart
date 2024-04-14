@@ -96,43 +96,41 @@ class ArticleView extends StatelessWidget {
       child: HasToShowInterstitialAdListener(
         interstitialAdBehavior: interstitialAdBehavior,
         child: HasReachedArticleLimitListener(
-          child: HasWatchedRewardedAdListener(
-            child: Scaffold(
-              backgroundColor: backgroundColor,
-              appBar: AppBar(
-                systemOverlayStyle: SystemUiOverlayStyle(
-                  statusBarIconBrightness:
-                      isVideoArticle ? Brightness.light : Brightness.dark,
-                  statusBarBrightness:
-                      isVideoArticle ? Brightness.dark : Brightness.light,
-                ),
-                leading: isVideoArticle
-                    ? AppBackButton.light(
-                        onPressed: () => _onBackButtonPressed(context),
-                      )
-                    : AppBackButton(
-                        onPressed: () => _onBackButtonPressed(context),
-                      ),
-                actions: [
-                  if (uri != null && uri.toString().isNotEmpty)
-                    Padding(
-                      key: const Key('articlePage_shareButton'),
-                      padding: const EdgeInsets.only(right: AppSpacing.lg),
-                      child: ShareButton(
-                        shareText: context.l10n.shareText,
-                        color: foregroundColor,
-                        onPressed: () => context
-                            .read<ArticleBloc>()
-                            .add(ShareRequested(uri: uri)),
-                      ),
+          child: Scaffold(
+            backgroundColor: backgroundColor,
+            appBar: AppBar(
+              systemOverlayStyle: SystemUiOverlayStyle(
+                statusBarIconBrightness:
+                    isVideoArticle ? Brightness.light : Brightness.dark,
+                statusBarBrightness:
+                    isVideoArticle ? Brightness.dark : Brightness.light,
+              ),
+              leading: isVideoArticle
+                  ? AppBackButton.light(
+                      onPressed: () => _onBackButtonPressed(context),
+                    )
+                  : AppBackButton(
+                      onPressed: () => _onBackButtonPressed(context),
                     ),
-                  if (!isSubscriber) const ArticleSubscribeButton(),
-                ],
-              ),
-              body: ArticleThemeOverride(
-                isVideoArticle: isVideoArticle,
-                child: const ArticleContent(),
-              ),
+              actions: [
+                if (uri != null && uri.toString().isNotEmpty)
+                  Padding(
+                    key: const Key('articlePage_shareButton'),
+                    padding: const EdgeInsets.only(right: AppSpacing.lg),
+                    child: ShareButton(
+                      shareText: context.l10n.shareText,
+                      color: foregroundColor,
+                      onPressed: () => context
+                          .read<ArticleBloc>()
+                          .add(ShareRequested(uri: uri)),
+                    ),
+                  ),
+                if (!isSubscriber) const ArticleSubscribeButton(),
+              ],
+            ),
+            body: ArticleThemeOverride(
+              isVideoArticle: isVideoArticle,
+              child: const ArticleContent(),
             ),
           ),
         ),
@@ -192,27 +190,6 @@ class HasReachedArticleLimitListener extends StatelessWidget {
       listenWhen: (previous, current) =>
           previous.hasReachedArticleViewsLimit !=
           current.hasReachedArticleViewsLimit,
-      child: child,
-    );
-  }
-}
-
-@visibleForTesting
-class HasWatchedRewardedAdListener extends StatelessWidget {
-  const HasWatchedRewardedAdListener({super.key, this.child});
-
-  final Widget? child;
-
-  @override
-  Widget build(BuildContext context) {
-    return BlocListener<FullScreenAdsBloc, FullScreenAdsState>(
-      listener: (context, state) {
-        if (state.earnedReward != null) {
-          context.read<ArticleBloc>().add(const ArticleRewardedAdWatched());
-        }
-      },
-      listenWhen: (previous, current) =>
-          previous.earnedReward != current.earnedReward,
       child: child,
     );
   }
